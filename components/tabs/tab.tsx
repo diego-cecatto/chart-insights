@@ -1,3 +1,7 @@
-export default function Tab({ children }: any) {
-    return children
+declare type TabProps = {
+    children: React.ReactNode;
+    title: string;
+};
+export default function Tab({ children }: TabProps) {
+    return children;
 }
