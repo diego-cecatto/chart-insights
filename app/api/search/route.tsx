@@ -1,29 +1,17 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-
 interface Asset {
     name: string;
     description: string;
     date: string;
 }
 
-declare type SearchRequestBody = {
-    query: string;
-    type: string
+export async function GET(req: Request) {
+    return new Response(JSON.stringify(items));
 }
 
-declare type SearchResponseData = {
-    results: Asset[];
-}
+export async function POST(req: Request) {
+    const { query, type } = await req.json();
+    return new Response(JSON.stringify(performSearch(query, type)));
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-    if (req.method === 'POST') {
-        const { query, type }: SearchRequestBody = req.body;
-        const results = performSearch(query, type);
-        const response: SearchResponseData = { results };
-        res.status(200).json(response);
-    } else {
-        res.status(405).json({ message: 'Method not allowed' });
-    }
 }
 
 const items: Asset[] = [

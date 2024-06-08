@@ -8,8 +8,6 @@ const ResearchBar = () => {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
-
-  // const [searchQuery, setSearchQuery] = useState(searchParams.get('query')?.toString());
   const [previousSearches, setPreviousSearches] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -20,10 +18,6 @@ const ResearchBar = () => {
       setPreviousSearches(JSON.parse(savedSearches));
     }
   }, []);
-
-  // const handleInputChange = (e) => {
-  //   setSearchQuery(e.target.value);
-  // };
 
   const handleInputFocus = () => {
     setShowDropdown(true);
@@ -61,11 +55,6 @@ const ResearchBar = () => {
     handleSearch(searchQuery);
   };
 
-  // const handlePreviousSearchClick = (query) => {
-  //   setSearchQuery(query);
-  //   setShowDropdown(false);
-  // };
-
   return (
     <form className="mb-8" onSubmit={handleSearchSubmit}>
       <div className="relative">
@@ -78,11 +67,8 @@ const ResearchBar = () => {
           className="w-full px-4 py-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg"
           placeholder="Type to search..."
           defaultValue={searchParams.get('query')?.toString()}
-          // value={searchQuery}
-          // onChange={handleInputChange}
           onFocus={handleInputFocus}
           onBlur={handleInputBlur}
-          required
         />
         {showDropdown && previousSearches.length > 0 && (
           <ul className="absolute w-full bg-white border border-gray-300 rounded-lg shadow-lg mt-1">
@@ -90,7 +76,6 @@ const ResearchBar = () => {
               <li
                 key={index}
                 className="px-4 py-2 cursor-pointer hover:bg-gray-200"
-              // onMouseDown={() => handlePreviousSearchClick(query)}
               >
                 {query}
               </li>

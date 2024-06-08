@@ -8,20 +8,18 @@ declare type SectionListProps = {
 }
 export default async function SectionList({ title, description, search, variant = 'secondary' }: SectionListProps) {
 
-  const assets: any[] = [];
-  // try {
-  //   const response = await fetch('/api/search', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify({ query: search, type: title }),
-  //   });
+  let assets: any[] = [];
+  try {
+    const response = await fetch('https://chartinsights-fuxc--3000--c3e5e364.local-credentialless.webcontainer.io/api/search', {
+      method: 'POST',
+      body: JSON.stringify({ query: search, type: title }),
+    });
 
-  //   const assets = await response.json();
-  // } catch (error) {
-  //   console.error('Error fetching search results:', error);
-  // }
+    assets = await response.json();
+  } catch (error) {
+    console.error('Error fetching search results:', error);
+  }
+
   console.log(assets)
   return (
     <>
