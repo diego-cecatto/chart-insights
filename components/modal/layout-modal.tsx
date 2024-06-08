@@ -5,9 +5,9 @@ import StoryBoardIcon from '../icons/storyboard';
 import InfoIcon from '../icons/info';
 import Bookmarkcon from '../icons/bookmark';
 
-const LayoutModal = ({ isOpen, onClose }) => {
+const LayoutModal = () => {
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal>
       <div className="p-4">
         <div className="text-center mb-4">
           <div className="flex items-center justify-center mb-6">
@@ -85,10 +85,10 @@ const LayoutModal = ({ isOpen, onClose }) => {
             </div>
           </div>
         </div>
-        <Button className="w-full flex justify-center items-center">
+        {/* <Button onClick={() => { }} className="w-full flex justify-center items-center">
           {' '}
           <Bookmarkcon className="w-5 mr-2" /> Favorite item
-        </Button>
+        </Button> */}
       </div>
     </Modal>
   );

@@ -1,4 +1,5 @@
 interface Asset {
+    id: number;
     name: string;
     description: string;
     date: string;
@@ -16,21 +17,25 @@ export async function POST(req: Request) {
 
 const items: Asset[] = [
     {
+        id: 1,
         name: 'Item Name',
         description: 'Short description of the item goes nicely here.',
         date: '06/27/2024',
     },
     {
+        id: 2,
         name: 'Item Name',
         description: 'Short description of the item goes nicely here.',
         date: '08/27/2024',
     },
     {
+        id: 3,
         name: 'Item Name',
         description: 'Short description of the item goes nicely here.',
         date: '06/27/2024',
     },
     {
+        id: 4,
         name: 'Item Name',
         description: 'Short description of the item goes nicely here.',
         date: '08/27/2024',

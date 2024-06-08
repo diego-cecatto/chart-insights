@@ -1,9 +1,5 @@
-// 'use client';
 import SectionList from '@/components/home/section-list';
 import SearchBar from '@/components/search/search-bar';
-// import LayoutModal from '@/components/modal/layout-modal';
-// import Button from '@/components/button/button';
-// import React, { useState } from 'react';
 
 export default function Home({ searchParams }: {
   searchParams?: {
@@ -12,10 +8,6 @@ export default function Home({ searchParams }: {
 }) {
 
   const query = searchParams?.query || '';
-  // const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // const openModal = () => setIsModalOpen(true);
-  // const closeModal = () => setIsModalOpen(false);
 
   return (
     <div className="container mx-auto p-4 max-w-screen-lg pt-8">
@@ -49,8 +41,6 @@ export default function Home({ searchParams }: {
           search={query}
           description="Most popular by community"
         />
-        {/* <Button onClick={openModal}>Open Layout Modal</Button>
-        <LayoutModal isOpen={isModalOpen} onClose={closeModal} /> */}
       </main>
     </div>
   );
