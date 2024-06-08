@@ -1,9 +1,15 @@
+'use client'
 import { useState, useEffect } from 'react';
 import FindIcon from '@/components/icons/find';
 import SessionStorage from '@/utils/session-storage';
+import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 
 const ResearchBar = () => {
-  const [searchQuery, setSearchQuery] = useState('');
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
+  const { replace } = useRouter();
+
+  // const [searchQuery, setSearchQuery] = useState(searchParams.get('query')?.toString());
   const [previousSearches, setPreviousSearches] = useState([]);
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -15,9 +21,9 @@ const ResearchBar = () => {
     }
   }, []);
 
-  const handleInputChange = (e) => {
-    setSearchQuery(e.target.value);
-  };
+  // const handleInputChange = (e) => {
+  //   setSearchQuery(e.target.value);
+  // };
 
   const handleInputFocus = () => {
     setShowDropdown(true);
@@ -27,10 +33,23 @@ const ResearchBar = () => {
     setTimeout(() => setShowDropdown(false), 200);
   };
 
+  const handleSearch = (query) => {
+    const params = new URLSearchParams(searchParams);
+    if (query) {
+      params.set("query", query);
+    } else {
+      params.delete("query")
+    }
+    replace(`${pathname}?${params.toString()}`);
+  }
+
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    if (!searchQuery.trim()) return;
-
+    const form = e.target;
+    const searchQuery = form.elements['searchQuery'].value;
+    if (!searchQuery.trim()) {
+      return;
+    }
     const updatedSearches = [
       searchQuery,
       ...previousSearches.filter((q) => q !== searchQuery),
@@ -38,13 +57,14 @@ const ResearchBar = () => {
     setPreviousSearches(updatedSearches);
     var storage = new SessionStorage();
     storage.setCookie('previousSearches', JSON.stringify(updatedSearches));
-    setSearchQuery('');
+    setShowDropdown(false);
+    handleSearch(searchQuery);
   };
 
-  const handlePreviousSearchClick = (query) => {
-    setSearchQuery(query);
-    setShowDropdown(false);
-  };
+  // const handlePreviousSearchClick = (query) => {
+  //   setSearchQuery(query);
+  //   setShowDropdown(false);
+  // };
 
   return (
     <form className="mb-8" onSubmit={handleSearchSubmit}>
@@ -54,11 +74,12 @@ const ResearchBar = () => {
         </div>
         <input
           type="text"
-          id="default-search"
+          id="searchQuery"
           className="w-full px-4 py-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg"
           placeholder="Type to search..."
-          value={searchQuery}
-          onChange={handleInputChange}
+          defaultValue={searchParams.get('query')?.toString()}
+          // value={searchQuery}
+          // onChange={handleInputChange}
           onFocus={handleInputFocus}
           onBlur={handleInputBlur}
           required
@@ -69,7 +90,7 @@ const ResearchBar = () => {
               <li
                 key={index}
                 className="px-4 py-2 cursor-pointer hover:bg-gray-200"
-                onMouseDown={() => handlePreviousSearchClick(query)}
+              // onMouseDown={() => handlePreviousSearchClick(query)}
               >
                 {query}
               </li>

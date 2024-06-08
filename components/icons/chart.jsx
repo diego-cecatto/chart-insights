@@ -2,7 +2,6 @@ export default function ChartIcon(props) {
   return (
     <svg
       aria-hidden="true"
-      data-testid="ScatterPlotIcon"
       viewBox="0 0 24 24"
       {...props}
     >
