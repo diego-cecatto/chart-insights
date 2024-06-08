@@ -1,5 +1,5 @@
 'use client'
-import React from "react"
+import React, { useCallback } from "react"
 import { createPortal } from "react-dom"
 import { useRouter } from "next/navigation"
 
@@ -9,9 +9,10 @@ declare type ModalProps = {
 
 export default function Modal({ children }: ModalProps) {
   const router = useRouter();
-  const onClose = () => {
+
+  const onClose = useCallback(() => {
     router.back();
-  }
+  }, [router]);
 
   return createPortal(<div
     className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"

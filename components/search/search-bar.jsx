@@ -28,7 +28,7 @@ const ResearchBar = () => {
   };
 
   const handleSearch = (query) => {
-    const params = new URLSearchParams(searchParams);
+    const params = new URLSearchParams(searchParams.toString());
     if (query) {
       params.set("query", query);
     } else {
