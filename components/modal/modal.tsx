@@ -3,6 +3,7 @@ import React from 'react';
 import { createPortal } from 'react-dom';
 import { useRouter } from 'next/navigation';
 import Hyperlink from '../icons/hyperlink';
+import { toast } from 'react-toastify';
 
 declare type ModalProps = {
     children: React.ReactNode;
@@ -34,6 +35,10 @@ export default function Modal({ children, share = false }: ModalProps) {
                                 onClick={(e) => {
                                     e.stopPropagation();
                                     e.preventDefault();
+                                    navigator.clipboard.writeText(
+                                        window.location.href
+                                    );
+                                    toast('Link copied to clipboard!');
                                 }}
                                 className="w-4"
                             >

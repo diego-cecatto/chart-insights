@@ -8,7 +8,7 @@ declare type AssetProps = {
 };
 export default function AssetModal({ params: { id } }: AssetProps) {
     return (
-        <Modal>
+        <Modal share={true}>
             <AssetDetails id={id} />
         </Modal>
     );
