@@ -1,6 +1,7 @@
 import AssetItem from '@/components/assets/asset-item';
 import { getByType, Asset } from '@/database/assets/assets-database';
 import ChartIcon from '../icons/chart';
+import LoadMoreButton from './load-more-button';
 
 declare type AssetListProps = {
     type: string;
@@ -29,6 +30,7 @@ export default async function AssetList({ type, search }: AssetListProps) {
                         <AssetItem key={index} item={item} popular />
                     ))}
                 </div>
+                <LoadMoreButton asset={assets} />
             </section>
             <section className="mt-12">
                 <h2 className="text-2xl font-semibold">Trending</h2>
@@ -38,6 +40,7 @@ export default async function AssetList({ type, search }: AssetListProps) {
                         <AssetItem key={index} item={item} />
                     ))}
                 </div>
+                <LoadMoreButton asset={assets} />
             </section>
         </>
     );

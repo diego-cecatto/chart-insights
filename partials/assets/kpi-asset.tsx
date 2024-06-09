@@ -1,9 +1,9 @@
-import InfoIcon from '@/components/icons/info';
 import AssetBase from './asset-base';
 import { Asset } from '@/database/assets/assets-database';
 import ChartIcon from '@/components/icons/chart';
 import TabsClient from '@/components/tabs/client/tabs-client';
 import TabClient from '@/components/tabs/client/tab-client';
+import KPIAssetVisuals from './kpi-asset-visuals';
 
 export default async function KPIAsset({ asset }: { asset: Asset }) {
     return (
@@ -45,25 +45,7 @@ export default async function KPIAsset({ asset }: { asset: Asset }) {
                     </div>
                 </TabClient>
                 <TabClient title="Visuals">
-                    <div className="mt-8 pl-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        {[1, 2, 3, 4].map((item, index) => (
-                            <div className="hover:shadow-lg p-4 rounded flex items-stretch gap-4 w-full ">
-                                <div className="rounded-lg bg-slate-100 w-32 flex items-center justify-center">
-                                    <ChartIcon className="w-10" />
-                                </div>
-                                <div>
-                                    <h3 className="text-xl font-bold">
-                                        Item Name
-                                    </h3>
-                                    <p className="text-neutra mb-4">
-                                        Short description of the item goes
-                                        nicely
-                                    </p>
-                                    <p className="text-gray-400">06/07/2024</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                    <KPIAssetVisuals asset={asset} />
                 </TabClient>
                 <TabClient title="Affiliate Applicable">
                     <div className="mb-4 mt-8">

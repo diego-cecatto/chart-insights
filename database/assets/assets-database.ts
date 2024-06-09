@@ -10,7 +10,11 @@ export declare type Asset = {
     hasAccess: boolean;
 };
 
-export async function getByType(type: string, query: string = '') {
+export async function getByType(
+    type: string,
+    query: string = '',
+    page: number = 1
+) {
     const treending: Asset[] = [];
     const assets: Asset[] = [];
     for (const item of mockedData as Asset[]) {
@@ -30,7 +34,11 @@ export async function getByType(type: string, query: string = '') {
             assets.push(item);
         }
     }
-    return { treending, assets };
+    const pageIndex = page - 1;
+    return {
+        treending: treending.slice(pageIndex, pageIndex + 4),
+        assets: assets.slice(pageIndex, pageIndex + 4),
+    };
 }
 
 export async function getById(id: string) {

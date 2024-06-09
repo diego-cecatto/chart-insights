@@ -1,10 +1,6 @@
-//QUESTIONS
-//how define kpis to be selected?
-//how capture and annotate insights to share
-
 //MODAL ITEMS
 //TODO implement notify user that hyperlink was copied to clipboard
-//TODO add button to load more items, pagination
+//TODO request access pass id thoright
 
 //PLUS
 [] esc on modals

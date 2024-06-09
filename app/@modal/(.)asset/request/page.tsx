@@ -4,7 +4,7 @@ import AccessRequestForm from '@/partials/assets/request-access';
 export default function Request() {
     return (
         <Modal>
-            <AccessRequestForm />
+            <AccessRequestForm id="fake-id" />
         </Modal>
     );
 }
