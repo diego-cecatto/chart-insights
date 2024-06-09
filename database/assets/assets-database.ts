@@ -7,6 +7,7 @@ export declare type Asset = {
     type: 'Featured' | 'KPI' | 'Layout' | 'StoryBoards';
     trending: boolean;
     bookmarked: boolean;
+    hasAccess: boolean;
 };
 
 export async function getByType(type: string, query: string = '') {
@@ -34,7 +35,7 @@ export async function getByType(type: string, query: string = '') {
 }
 
 export async function getById(id: string) {
-    return mockedData.filter((item) => item.id === id)[0];
+    return mockedData.filter((item) => item.id === id)[0] as Asset;
 }
 
 export async function findAll(query: string) {

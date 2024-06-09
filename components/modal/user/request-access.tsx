@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Modal from '../modal';
 
 const AccessRequestForm = () => {
     const handleSubmit = (e: any) => {
@@ -34,7 +33,7 @@ const AccessRequestForm = () => {
                 </div>
                 <button
                     type="submit"
-                    className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors duration-200"
+                    className="w-full text-white py-2 px-4 rounded bg-slate-900 hover:bg-slate-800 transition-colors duration-200"
                 >
                     Send
                 </button>

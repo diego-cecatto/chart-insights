@@ -6,9 +6,10 @@ import Hyperlink from '../icons/hyperlink';
 
 declare type ModalProps = {
     children: React.ReactNode;
+    share?: boolean;
 };
 
-export default function Modal({ children }: ModalProps) {
+export default function Modal({ children, share = false }: ModalProps) {
     const router = useRouter();
 
     const onClose = () => {
@@ -27,18 +28,24 @@ export default function Modal({ children }: ModalProps) {
                 }}
             >
                 <div className="pt-4 pr-4 flex items-center">
-                    <div className="flex items-center ml-auto mr-2">
-                        <button
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                e.preventDefault();
-                            }}
-                            className="w-4"
-                        >
-                            <Hyperlink className=" " />
-                        </button>
-                    </div>
-                    <div className="flex items-center">
+                    {share && (
+                        <div className="flex items-center ml-auto mr-2">
+                            <button
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    e.preventDefault();
+                                }}
+                                className="w-4"
+                            >
+                                <Hyperlink className=" " />
+                            </button>
+                        </div>
+                    )}
+                    <div
+                        className={`flex items-center ${
+                            !share ? 'ml-auto' : ''
+                        }`}
+                    >
                         <button
                             onClick={(e) => {
                                 e.stopPropagation();
