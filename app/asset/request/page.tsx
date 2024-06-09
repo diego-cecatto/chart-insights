@@ -1,4 +1,4 @@
-import AccessRequestForm from '@/components/modal/user/request-access';
+import AccessRequestForm from '@/partials/assets/request-access';
 import Link from 'next/link';
 
 export default function Request() {

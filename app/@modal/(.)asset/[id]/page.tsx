@@ -1,15 +1,15 @@
 import Modal from '@/components/modal/modal';
-import AssetDetails from '@/partials/assets/asset-details';
+import Asset from '@/partials/assets/asset';
 
 declare type AssetProps = {
     params: {
         id: string;
     };
 };
-export default function Asset({ params: { id } }: AssetProps) {
+export default function AssetModal({ params: { id } }: AssetProps) {
     return (
         <Modal>
-            <AssetDetails id={id} />
+            <Asset id={id} />
         </Modal>
     );
 }

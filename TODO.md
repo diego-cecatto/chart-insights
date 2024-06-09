@@ -7,22 +7,36 @@
 //create multiples urls?
 
 //MODAL ITEMS
-//TODO remove top part of share
-//TODO implement notify user that hyperlink was copied to clipboard
 //TODO create others types of modals
-//TODO add button to laod more items, pagination
+//TODO implement notify user that hyperlink was copied to clipboard
+//TODO add button to load more items, pagination
 //TODO close on press esc
-//TODO add permission field, and if user not has permission request it (middleware)
-//TODO notify user that hyperlink was copied to clipboard
-//TODO hover in bookmark button
-//TODO add border bottom and padding in a bookmark button
 //TODO change color of bookmark button when is active
 //TODO when is favoriting an item show loading status
 //TODO user could remove a bookmarked item
 
+//TODO KPIs details
+[] calculation
+[] visuals avaliable
+[] Affiliate Applicability
+
+//TODO Data viz Modal
+[] Applicable kpi favorites
+[] Assert info context
+[] Interact with chart
+
+//TODO Layout
+[] Amount of pages
+[] KPI`s being used
+[] Preview layout
+
+//Storyboard
+[] couple kpis/filter
+[] applicable filiates
+[] request access
+
 //DETAIL PAGE
 //TODO add back button
-//TODO build detail page
 
 //REQUEST ACCESS PAGE
 //TODO send request to backend
