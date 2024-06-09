@@ -11,7 +11,7 @@ const AccessRequestForm = () => {
     return (
         <div className="bg-white p-8 rounded max-w-lg w-full mx-auto">
             <h1 className="text-2xl font-bold text-red-600 mb-4">
-                Access Not Authorized
+                Request Access
             </h1>
             <p className="text-gray-700 mb-6">
                 Describe below the reason that you need access to this asset.

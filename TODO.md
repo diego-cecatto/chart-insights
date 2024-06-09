@@ -1,9 +1,11 @@
-//MODAL ITEMS
-//TODO implement notify user that hyperlink was copied to clipboard
-//TODO request access pass id thoright
-
 //PLUS
-[] esc on modals
-[] show in tabs all amount of each items
-[] create multiples urls?
-[] Change Id to slugs
+
+:::TABS
+[] Show to the user the amount of items that has in each tab
+
+::MODALS
+[] ESC close modals
+
+::ROUTES
+[] For each type of asset create a route
+[] To assets istead use id use slugs
