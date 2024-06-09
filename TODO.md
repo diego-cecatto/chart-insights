@@ -1,36 +1,27 @@
-TABS
-//TODO create tabs component
+//TODO search online about this content, to understand more details
+//TODO check on click on items is not keeping the data, use some component to manage the state
 
-//TODO Routes combination
-//todo remove api on backend to retrieve data  => use mocked data
-
-//TODO create an isolated search area
-
-SEARCH BAR
-//TODO remove items from research
-//TODO remove hover from item
-//TODO remove current search
-//TODO add function to filter items
-/TODO not show default search cover suggestions
-//TODO hover into items
-//TODO highligt items-list and normal -> variant
-//TODO add click to open modal items
-//TODO on leave page remove selection from items
+MODAL
+//TODO adjust close icon
 
 //DETAILS
 //TODO add to bookmark item
-//TODO ask for permisison to use this item
+//TODO ask for permission to use this item
 //TODO create anothers details items
+
+//MODAL ITEMS
+//TODO add pagination
+//TODO add function to bookmark and show bookmarked item
+//TODO close on press esc
+//TODO adjust layout details
+//TODO implement see more items, to retrieve more items
+
+//TODO improve icons
+//TODO build detail page
 
 //DATA
 //TODO save in json file dynamically
 
-//MODAL
-//TODO create modals variants accordly the type of the item
-//TODO add funtion to bookmark and show bookmarked item
-//TODO close on press esc
-
-//TODO improve icons
-//TODO useCallback
-
-//TODO build detal page
+//PLUS
+//TODO show not found items
+//item page, view buttom to go back to home page

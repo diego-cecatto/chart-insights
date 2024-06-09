@@ -4,16 +4,25 @@ export declare type Asset = {
     name: string;
     description: string;
     date: string;
-    type: 'Featured' | 'KPI' | 'Layout' | 'Storyboard';
+    type: 'Featured' | 'KPI' | 'Layout' | 'StoryBoards';
     trending: boolean;
     bookmarked: boolean;
 };
 
-export async function getByType(type: string) {
+export async function getByType(type: string, query: string = '') {
+    console.log('DATABASE CAL', type);
     const treending: Asset[] = [];
     const assets: Asset[] = [];
     for (const item of mockedData as Asset[]) {
         if (item.type === type) {
+            if (
+                query &&
+                !item.name.toLowerCase().includes(query.toLowerCase()) &&
+                !item.description.toLowerCase().includes(query.toLowerCase())
+            ) {
+                continue;
+            }
+
             if (item.trending) {
                 treending.push(item);
                 continue;

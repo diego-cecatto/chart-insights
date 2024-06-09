@@ -22,7 +22,7 @@ AssetListProps) {
         // });
 
         // assets = await response.json();
-        const res = await getByType(type);
+        const res = await getByType(type, search);
         assets = res.assets;
         treending = res.treending;
     } catch (error) {

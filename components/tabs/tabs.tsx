@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import TabButton from './tab-button';
 declare type TabsProps = {
     children: React.ReactNode[];
     active: string;
@@ -17,15 +17,11 @@ export default function Tabs({ children, active }: TabsProps) {
                         isActive = true;
                     }
                     return (
-                        <Link
+                        <TabButton
                             key={index}
-                            href={`?tab=${title}`}
-                            className={`py-2 font-semibold rounded w-full text-center ${
-                                isActive ? 'bg-white' : 'bg-slate-100'
-                            }`}
-                        >
-                            {child.props.title}
-                        </Link>
+                            title={child.props.title}
+                            isActive={isActive}
+                        />
                     );
                 })}
             </div>

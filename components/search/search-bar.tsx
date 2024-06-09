@@ -8,6 +8,9 @@ const SearchBar = () => {
     const searchParams = useSearchParams();
     const pathname = usePathname();
     const { replace } = useRouter();
+    const [query, setQuery] = useState<string>(
+        searchParams.get('query')?.toString() || ''
+    );
     const [previousSearches, setPreviousSearches] = useState<string[]>([]);
     const [showDropdown, setShowDropdown] = useState<boolean>(false);
 
@@ -41,16 +44,18 @@ const SearchBar = () => {
         e.preventDefault();
         const form = e.target;
         const searchQuery = form.elements['searchQuery'].value;
-        if (!searchQuery.trim()) {
-            return;
-        }
         const updatedSearches: string[] = [
             searchQuery,
             ...previousSearches.filter((q) => q !== searchQuery),
         ];
         setPreviousSearches(updatedSearches);
         var storage = new SessionStorage();
-        storage.setCookie('previousSearches', JSON.stringify(updatedSearches));
+        if (searchQuery.trim()) {
+            storage.setCookie(
+                'previousSearches',
+                JSON.stringify(updatedSearches)
+            );
+        }
         setShowDropdown(false);
         handleSearch(searchQuery);
     };
@@ -63,18 +68,39 @@ const SearchBar = () => {
                 </div>
                 <input
                     type="text"
+                    autoComplete="off"
                     id="searchQuery"
                     className="w-full px-4 py-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg"
                     placeholder="Type to search..."
-                    defaultValue={searchParams.get('query')?.toString()}
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
                     onFocus={handleInputFocus}
                     onBlur={handleInputBlur}
                 />
+                {query && (
+                    <div className="absolute inset-y-0 end-4 flex items-center ps-3">
+                        <button
+                            className="pl-2 pr-2 rounded-xl hover:bg-gray-100 line-height-24"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                e.stopPropagation();
+                                setQuery('');
+                                handleSearch('');
+                            }}
+                        >
+                            &times;
+                        </button>
+                    </div>
+                )}
                 {showDropdown && previousSearches.length > 0 && (
                     <ul className="absolute w-full bg-white border border-gray-300 rounded-lg shadow-lg mt-1">
                         {previousSearches.map((query, index) => (
                             <li
                                 key={index}
+                                onClick={() => {
+                                    handleSearch(query);
+                                    setQuery(query);
+                                }}
                                 className="px-4 py-2 cursor-pointer hover:bg-gray-200"
                             >
                                 {query}

@@ -9,11 +9,11 @@ export default function Asset({ item, popular }: AssetProps) {
     return (
         <Link href={`asset/${item.id}`}>
             <div
-                className={`p-4 border border-gray-100 rounded flex items-stretch gap-4 w-full ${
-                    popular ? 'bg-white' : ''
+                className={`hover:shadow-lg p-4 rounded flex items-stretch gap-4 w-full ${
+                    popular ? 'bg-white border border-gray-100' : ''
                 }`}
             >
-                <div className="rounded-lg bg-slate-100 w-52 flex items-center justify-center">
+                <div className="rounded-lg bg-slate-100 w-32 flex items-center justify-center">
                     <ChartIcon className="w-10" />
                 </div>
                 <div>
