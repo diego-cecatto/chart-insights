@@ -11,25 +11,6 @@
 //TODO add button to load more items, pagination
 //TODO close on press esc
 
-//TODO Data viz Modal
-[] Applicable kpi favorites
-[] Assert info context
-[] Interact with chart
-
-//TODO Layout
-[] Amount of pages
-[] KPI`s being used
-[] Preview layout
-
-//Storyboard
-[] couple kpis/filter
-[] applicable filiates
-[] request access
-
-//REQUEST ACCESS PAGE
-//TODO send request to backend
-//TODO add loading status
-
 //PLUS
 //TODO save in json file dynamically
 //TODO show not found items

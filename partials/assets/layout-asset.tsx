@@ -5,7 +5,7 @@ import { Asset } from '@/database/assets/assets-database';
 export default async function LayoutAsset({ asset }: { asset: Asset }) {
     return (
         <AssetBase asset={asset}>
-            <div className="grid grid-cols-4 gap-4 mb-4 text-center text-gray-600 divide-x">
+            <div className="mt-8 grid grid-cols-4 gap-4 mb-4 text-center text-gray-600 divide-x">
                 <div>
                     <p className="font-bold text-l">2485</p>
                     <p className="flex text-xs font-medium justify-center items-end">

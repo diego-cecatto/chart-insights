@@ -1,6 +1,7 @@
 import StoryBoardIcon from '@/components/icons/storyboard';
 import BookmarkButton from '@/components/modal/bookmark-button';
 import { Asset } from '@/database/assets/assets-database';
+import RequestAccesButton from '../../components/assets/request-access-button';
 
 export default async function AssetDetails({
     asset,
@@ -44,6 +45,7 @@ export default async function AssetDetails({
                 </div>
                 {children}
             </div>
+            {!asset.hasAccess && <RequestAccesButton id={asset.id} />}
             <BookmarkButton id={asset.id} bookmarked={asset.bookmarked} />
         </>
     );

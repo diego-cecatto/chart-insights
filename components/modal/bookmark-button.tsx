@@ -16,8 +16,8 @@ export default function BookmarkButton({
         setLoading(true);
         setIsBookmarked(!isBookmarked);
         try {
-            await fetch(`/api/bookmarks/${id}`, {
-                method: isBookmarked ? 'DELETE' : 'POST',
+            await fetch(`/api/bookmark/${id}`, {
+                method: isBookmarked ? 'DELETE' : 'GET',
             });
         } catch (error) {
             setIsBookmarked(!isBookmarked);

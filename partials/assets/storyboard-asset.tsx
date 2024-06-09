@@ -1,54 +1,36 @@
-import InfoIcon from '@/components/icons/info';
 import AssetBase from './asset-base';
-import { Asset, getById } from '@/database/assets/assets-database';
+import { Asset } from '@/database/assets/assets-database';
+import ChartIcon from '@/components/icons/chart';
 
 export default async function StoryboardAsset({ asset }: { asset: Asset }) {
     return (
         <AssetBase asset={asset}>
-            <div className="grid grid-cols-4 gap-4 mb-4 text-center text-gray-600 divide-x">
-                <div>
-                    <p className="font-bold text-l">2485</p>
-                    <p className="flex text-xs font-medium justify-center items-end">
-                        Used <InfoIcon className="w-4 ml-2" />
-                    </p>
-                </div>
-                <div>
-                    <p className="font-bold text-l">Universal</p>
-                    <p className="text-xs font-medium">Type</p>
-                </div>
-                <div>
-                    <p className="font-bold text-l">6</p>
-                    <p className="flex justify-center items-end text-xs font-medium">
-                        Pages No.
-                        <span>
-                            <InfoIcon className="w-4 ml-2" />
-                        </span>
-                    </p>
-                </div>
-                <div>
-                    <p className="font-bold text-l">{asset.date}</p>
-                    <p className="text-xs font-medium">Last Updated</p>
-                </div>
+            <div className="mt-8 pl-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[1, 2, 3, 4].map((item, index) => (
+                    <div className="hover:shadow-lg p-4 rounded flex items-stretch gap-4 w-full ">
+                        <div className="rounded-lg bg-slate-100 w-32 flex items-center justify-center">
+                            <ChartIcon className="w-10" />
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold">Item Name</h3>
+                            <p className="text-neutra mb-4">
+                                Short description of the item goes nicely
+                            </p>
+                            <p className="text-gray-400">06/07/2024</p>
+                        </div>
+                    </div>
+                ))}
             </div>
-            <div className="h-72 bg-gray-100 rounded mb-6"></div>
-            <div className="mb-4">
+            <div className="mb-4 mt-8">
                 <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-gray-100 p-4 rounded ">
-                        <p className="font-semibold">Question 1</p>
-                        <p>Short description of the item goes nicely here.</p>
-                    </div>
-                    <div>
-                        <p className="font-semibold">Question 2</p>
-                        <p>Short description of the item goes nicely here.</p>
-                    </div>
-                    <div>
-                        <p className="font-semibold">Question 3</p>
-                        <p>Short description of the item goes nicely here.</p>
-                    </div>
-                    <div>
-                        <p className="font-semibold">Question 4</p>
-                        <p>Short description of the item goes nicely here.</p>
-                    </div>
+                    {[1, 2, 3, 4].map((item, index) => (
+                        <div className="p-4">
+                            <p className="font-semibold">Affliate {item}</p>
+                            <p>
+                                Short description of the item goes nicely here.
+                            </p>
+                        </div>
+                    ))}
                 </div>
             </div>
         </AssetBase>

@@ -5,6 +5,7 @@ import InfoIcon from '../icons/info';
 import Bookmarkcon from '../icons/bookmark';
 import { getById } from '@/database/assets/assets-database';
 import BookmarkButton from './bookmark-button';
+import RequestAccesButton from '@/components/assets/request-access-button';
 
 const LayoutModal = async ({ id }: { id: string }) => {
     var asset = await getById(id);
@@ -96,6 +97,7 @@ const LayoutModal = async ({ id }: { id: string }) => {
                     </div>
                 </div>
             </div>
+            {!asset.hasAccess && <RequestAccesButton id={asset.id} />}
             <BookmarkButton id={id} bookmarked={asset.bookmarked} />
         </Modal>
     );

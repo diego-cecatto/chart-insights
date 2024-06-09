@@ -10,7 +10,7 @@ export async function middleware(request: NextRequest) {
     var item = await getById(id);
     if (!item) {
         return NextResponse.error();
-    } else if (item.hasAccess === false) {
+    } else if (item.type !== 'Storyboards' && item.hasAccess === false) {
         return NextResponse.redirect(new URL('/asset/request', request.url));
     }
     return NextResponse.next();
