@@ -6,7 +6,8 @@
         "date": "10/16/2024",
         "type": "Featured",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "c7c283f8-4c61-48db-8f27-34d8f7281b6b",
@@ -15,7 +16,8 @@
         "date": "01/22/2025",
         "type": "Featured",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "5d9f0d8c-2dbe-4e1e-8f65-8cc26ec3a91e",
@@ -24,7 +26,8 @@
         "date": "08/10/2024",
         "type": "Featured",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "9e01a2d4-6f88-4db6-98d2-0cb106b6d99e",
@@ -33,7 +36,8 @@
         "date": "04/28/2025",
         "type": "Featured",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "acdd5d3e-52b5-4564-b34e-0da8c1b2c2b2",
@@ -42,7 +46,8 @@
         "date": "03/05/2025",
         "type": "Featured",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "c4d34c91-0c64-4c37-8e2c-34fbf6446bc8",
@@ -51,7 +56,8 @@
         "date": "06/25/2025",
         "type": "Featured",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "f0542c0b-3e36-4cb4-8b6d-60c9dc097b85",
@@ -60,7 +66,8 @@
         "date": "02/07/2025",
         "type": "Featured",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "2083b9b6-7293-4d68-80b8-3705e14a83d8",
@@ -69,7 +76,8 @@
         "date": "01/03/2025",
         "type": "Featured",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "9b1c1294-2bb5-4938-b30a-9d918d0d7f4c",
@@ -78,7 +86,8 @@
         "date": "04/23/2025",
         "type": "Featured",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": false
     },
     {
         "id": "749d4f97-7c6d-4a6d-8e9e-8efc1f2de7b8",
@@ -87,7 +96,8 @@
         "date": "05/15/2025",
         "type": "Featured",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "e88a1b60-d40c-4c74-b33e-d7d2beeb5a47",
@@ -96,7 +106,8 @@
         "date": "07/19/2025",
         "type": "Featured",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "2a67d1b7-02b2-4af8-a3ff-72be5580f1f1",
@@ -105,7 +116,8 @@
         "date": "06/06/2025",
         "type": "Featured",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "0ed2a32c-59fa-4703-8f95-2b28b9a4c7d8",
@@ -114,7 +126,8 @@
         "date": "12/09/2024",
         "type": "Featured",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "7c930d40-fbbc-4930-bf2e-9ba4d0ef0b70",
@@ -123,7 +136,8 @@
         "date": "03/15/2025",
         "type": "Featured",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "be0a7df8-33b0-422b-8329-e40db5b0f8c5",
@@ -132,7 +146,8 @@
         "date": "05/01/2025",
         "type": "Featured",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "d252b8e7-1201-44de-b7b1-0df6fcb1faae",
@@ -141,7 +156,8 @@
         "date": "10/02/2024",
         "type": "Featured",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "e25cb03d-6e9d-4d10-9c58-833cdd2c4515",
@@ -150,7 +166,8 @@
         "date": "06/01/2025",
         "type": "KPI",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "76a87b57-d5c4-4c4a-9d88-d5c7adf1bb8b",
@@ -159,7 +176,8 @@
         "date": "09/18/2024",
         "type": "KPI",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "2c491c75-6a29-42f5-92a0-2e378283f4d3",
@@ -168,7 +186,8 @@
         "date": "07/28/2024",
         "type": "KPI",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "2ec5b9e1-bde7-45b8-86a1-683f3435f937",
@@ -177,7 +196,8 @@
         "date": "01/05/2025",
         "type": "KPI",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "23b54268-11d2-470b-9153-89e8ac202d75",
@@ -186,7 +206,8 @@
         "date": "12/06/2024",
         "type": "KPI",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "fb3223cf-2ee4-4904-825a-e8ea9460d7ee",
@@ -195,7 +216,8 @@
         "date": "08/31/2024",
         "type": "KPI",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "b31c9c85-3f17-467a-9fd5-80083fc99b5e",
@@ -204,7 +226,8 @@
         "date": "04/13/2025",
         "type": "KPI",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "fce8e6ec-23ee-44ac-84e6-cfdcb7488325",
@@ -213,7 +236,8 @@
         "date": "08/11/2025",
         "type": "KPI",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "6404979a-f79d-46e0-9cda-576ea1e51852",
@@ -222,7 +246,8 @@
         "date": "06/17/2025",
         "type": "KPI",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "fe0b0cb7-9c7a-43aa-896b-0ae9ba2f474d",
@@ -231,7 +256,8 @@
         "date": "11/13/2024",
         "type": "KPI",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "28ef2d63-9fd4-4e6f-b6a2-51c100cf287e",
@@ -240,7 +266,8 @@
         "date": "12/25/2024",
         "type": "KPI",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "019e9b1a-fb7e-4af3-9f37-e6409b567302",
@@ -249,7 +276,8 @@
         "date": "07/20/2025",
         "type": "KPI",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "b1c50595-4202-4d3e-a4a4-08a2752c5167",
@@ -258,7 +286,8 @@
         "date": "09/10/2025",
         "type": "KPI",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "f34e0c69-7c6a-4ae1-80f6-c4d26e123cd3",
@@ -267,7 +296,8 @@
         "date": "10/24/2024",
         "type": "KPI",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "2492bc40-e40a-49e3-b3d5-2e3a92fbe8aa",
@@ -276,7 +306,8 @@
         "date": "02/05/2025",
         "type": "KPI",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "0801c52e-7f1b-44b4-902b-8cba634013be",
@@ -285,7 +316,8 @@
         "date": "08/15/2025",
         "type": "KPI",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "d0b20f3c-01a4-4e18-8986-15f8323a0013",
@@ -294,7 +326,8 @@
         "date": "03/22/2025",
         "type": "Layouts",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "d2c805df-f23e-4b57-9df1-0731ec2e7f0e",
@@ -303,7 +336,8 @@
         "date": "12/02/2024",
         "type": "Layouts",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "9f6e7bc1-df1c-4c40-b8d1-1353a67e8ecb",
@@ -312,7 +346,8 @@
         "date": "04/03/2025",
         "type": "Layouts",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "b8f5c80b-b22c-4e71-8a7c-097f76a763ad",
@@ -321,7 +356,8 @@
         "date": "06/27/2025",
         "type": "Layouts",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "e730d17f-4a7f-4cbf-a8a2-9c31d1e8c55b",
@@ -330,7 +366,8 @@
         "date": "08/06/2025",
         "type": "Layouts",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "81e25c38-76f5-4f0d-96c2-f3997166a495",
@@ -339,7 +376,8 @@
         "date": "01/11/2025",
         "type": "Layouts",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "5e29b5f4-51e2-42b0-8ca7-02e358c73209",
@@ -348,7 +386,8 @@
         "date": "05/19/2025",
         "type": "Layouts",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "f0031bb8-1963-4187-a8b3-5bbfcd6475c6",
@@ -357,7 +396,8 @@
         "date": "07/17/2025",
         "type": "Layouts",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "c9ff4fd9-54e3-4c8a-b870-5c68d1912d1e",
@@ -366,7 +406,8 @@
         "date": "03/03/2025",
         "type": "Layouts",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "cd9d5197-d6e0-4e29-94b5-2e2be5a59790",
@@ -375,7 +416,8 @@
         "date": "10/28/2024",
         "type": "Layouts",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "c857cb2f-1ff0-4e7d-b09e-1c08d2326c91",
@@ -384,7 +426,8 @@
         "date": "09/14/2025",
         "type": "Layouts",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "4e0c6da4-b508-43fc-9648-986b53776ba8",
@@ -393,7 +436,8 @@
         "date": "06/02/2025",
         "type": "Layouts",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "2af3d5b7-3e1d-4e6a-b4d1-cb920e7a512e",
@@ -402,7 +446,8 @@
         "date": "12/13/2024",
         "type": "Layouts",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "a20b3195-9cb0-44d7-9730-2ba87a3d2d6d",
@@ -411,7 +456,8 @@
         "date": "08/08/2025",
         "type": "Layouts",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "54c03f09-bc6a-4cb0-89ac-7062e14e0677",
@@ -420,7 +466,8 @@
         "date": "04/29/2025",
         "type": "Layouts",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "c2dd0150-fbda-46c1-b9be-b2f9f4f2d40f",
@@ -429,7 +476,8 @@
         "date": "11/07/2024",
         "type": "Layouts",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "fc80172b-daae-453e-9120-f11bdeaa1d84",
@@ -438,7 +486,8 @@
         "date": "09/22/2024",
         "type": "Layouts",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "10aef4ef-fb74-4ed9-846d-3cf21a2845bb",
@@ -447,7 +496,8 @@
         "date": "01/09/2025",
         "type": "Storyboards",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "03c26a39-c1d1-485b-83e5-7280871ff87e",
@@ -456,7 +506,8 @@
         "date": "03/12/2025",
         "type": "Storyboards",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "a722a7a4-6583-4e83-8a7a-6ad40cbef221",
@@ -465,7 +516,8 @@
         "date": "08/25/2024",
         "type": "Storyboards",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "96e2de57-1575-463b-b78d-e3b01f56b33c",
@@ -474,7 +526,8 @@
         "date": "05/25/2025",
         "type": "Storyboards",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "11579c5c-8f32-4a90-95b3-f10a678e62c5",
@@ -483,7 +536,8 @@
         "date": "06/29/2025",
         "type": "Storyboards",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "6409af22-b3db-4d0a-8d6b-67a0ec9878fa",
@@ -492,7 +546,8 @@
         "date": "07/04/2025",
         "type": "Storyboards",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "7b63bc2b-6ee1-4457-b76a-6af64398b10e",
@@ -501,7 +556,8 @@
         "date": "01/25/2025",
         "type": "Storyboards",
         "trending": true,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "83d469b1-eeb8-4bfb-8be0-0bc601d5307c",
@@ -510,7 +566,8 @@
         "date": "08/03/2024",
         "type": "Storyboards",
         "trending": true,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "dd7918b6-010b-45b3-9446-e36e30f88a7c",
@@ -519,7 +576,8 @@
         "date": "09/11/2025",
         "type": "Storyboards",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "c49d77c1-3738-4fa3-b9d6-72d9c92493b2",
@@ -528,7 +586,8 @@
         "date": "11/03/2024",
         "type": "Storyboards",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "05717d20-c2ef-4801-bf20-9f5e6053d44e",
@@ -537,7 +596,8 @@
         "date": "10/07/2025",
         "type": "Storyboards",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "7f27d73c-28f4-4908-8fcf-1c2d4e4f1e92",
@@ -546,7 +606,8 @@
         "date": "12/29/2024",
         "type": "Storyboards",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "f0d4e2cf-b44a-4aeb-8c5e-ec685bb52c18",
@@ -555,7 +616,8 @@
         "date": "07/12/2025",
         "type": "Storyboards",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "4d8ac316-c6e7-4e35-b4e0-3e37bc1c40f3",
@@ -564,7 +626,8 @@
         "date": "08/23/2024",
         "type": "Storyboards",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "7d803ecb-2ec7-44e5-89c8-9b4b76b356ef",
@@ -573,7 +636,8 @@
         "date": "10/05/2024",
         "type": "Storyboards",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "f0d7d7b6-6d14-4b94-b032-441399dd3c4b",
@@ -582,7 +646,8 @@
         "date": "01/28/2025",
         "type": "Storyboards",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "18e146ef-6e6d-42a0-b4e6-1777e32c6dd1",
@@ -591,7 +656,8 @@
         "date": "10/31/2024",
         "type": "Storyboards",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     },
     {
         "id": "eb96cfe7-1480-43cf-a94b-929c31e9ad5a",
@@ -600,7 +666,8 @@
         "date": "04/01/2025",
         "type": "Storyboards",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "21697d3f-df2d-4730-8ee8-0f4c11f8d0a7",
@@ -609,7 +676,8 @@
         "date": "07/21/2025",
         "type": "Storyboards",
         "trending": false,
-        "bookmarked": false
+        "bookmarked": false,
+        "hasAccess": true
     },
     {
         "id": "a4c6d137-2747-46c0-a2e7-0c6e91c19c7e",
@@ -618,6 +686,7 @@
         "date": "10/01/2025",
         "type": "Storyboards",
         "trending": false,
-        "bookmarked": true
+        "bookmarked": true,
+        "hasAccess": true
     }
 ]

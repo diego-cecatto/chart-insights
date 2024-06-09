@@ -1,27 +1,22 @@
 //TODO search online about this content, to understand more details
 //TODO check on click on items is not keeping the data, use some component to manage the state
 
-MODAL
-//TODO adjust close icon
-
 //DETAILS
-//TODO add to bookmark item
 //TODO ask for permission to use this item
-//TODO create anothers details items
 
 //MODAL ITEMS
-//TODO add pagination
-//TODO add function to bookmark and show bookmarked item
+//TODO create others types of modals
+//TODO add button to laod more items, pagination
 //TODO close on press esc
-//TODO adjust layout details
-//TODO implement see more items, to retrieve more items
+//TODO add permission field, and if user not has permission request it (middleware)
+//TODO notify user that hyperlink was copied to clipboard
 
-//TODO improve icons
+//DETAIL PAGE
+//TODO add back button
 //TODO build detail page
 
-//DATA
-//TODO save in json file dynamically
-
 //PLUS
+//TODO save in json file dynamically
 //TODO show not found items
 //item page, view buttom to go back to home page
+//TODO if not found asset show a message

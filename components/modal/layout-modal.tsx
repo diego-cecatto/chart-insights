@@ -3,8 +3,11 @@ import Modal from '@/components/modal/modal';
 import StoryBoardIcon from '../icons/storyboard';
 import InfoIcon from '../icons/info';
 import Bookmarkcon from '../icons/bookmark';
+import { getById } from '@/database/assets/assets-database';
+import BookmarkButton from './bookmark-button';
 
-const LayoutModal = () => {
+const LayoutModal = async ({ id }: { id: string }) => {
+    var asset = await getById(id);
     return (
         <Modal>
             <div className="p-4">
@@ -15,14 +18,12 @@ const LayoutModal = () => {
                         </span>
                     </div>
                     <h2 className="text-2xl font-semibold flex items-center h-50 justify-center">
-                        <span className="mr-2 text-4xl">INTES</span>
+                        <span className="mr-2 text-4xl">{asset.name}</span>
                         <span className="bg-slate-100 text-gray-700 text-xs rounded px-2 py-1 ">
-                            Layout
+                            {asset.type}
                         </span>
                     </h2>
-                    <p className="text-gray-500 mb-8">
-                        Descriptive name of the Layout
-                    </p>
+                    <p className="text-gray-500 mb-8">{asset.description}</p>
                     <p className="mt-2 text-gray-600">
                         Those options are already baked in with this model shoot
                         me an email clear blue water but we need distributors to
@@ -61,7 +62,7 @@ const LayoutModal = () => {
                         </p>
                     </div>
                     <div>
-                        <p className="font-bold text-l">07/23/2024</p>
+                        <p className="font-bold text-l">{asset.date}</p>
                         <p className="text-xs font-medium">Last Updated</p>
                     </div>
                 </div>
@@ -94,11 +95,8 @@ const LayoutModal = () => {
                         </div>
                     </div>
                 </div>
-                {/* <Button className="w-full flex justify-center items-center">
-                    {' '}
-                    <Bookmarkcon className="w-5 mr-2" /> Favorite item
-                </Button> */}
             </div>
+            <BookmarkButton id={id} bookmarked={asset.bookmarked} />
         </Modal>
     );
 };

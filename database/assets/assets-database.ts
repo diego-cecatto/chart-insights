@@ -34,7 +34,7 @@ export async function getByType(type: string, query: string = '') {
 }
 
 export async function getById(id: string) {
-    return mockedData.filter((item) => item.id === id);
+    return mockedData.filter((item) => item.id === id)[0];
 }
 
 export async function findAll(query: string) {

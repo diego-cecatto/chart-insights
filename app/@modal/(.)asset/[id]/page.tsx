@@ -6,5 +6,5 @@ declare type AssetProps = {
     };
 };
 export default function Asset({ params: { id } }: AssetProps) {
-    return <LayoutModal />;
+    return <LayoutModal id={id} />;
 }
