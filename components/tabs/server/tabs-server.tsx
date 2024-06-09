@@ -1,10 +1,10 @@
-import TabButton from './tab-button';
+import TabButton from '../tab-button';
 declare type TabsProps = {
     children: React.ReactNode[];
     active: string;
 };
 
-export default function Tabs({ children, active }: TabsProps) {
+export default function TabsServer({ children, active }: TabsProps) {
     let activeChild = null;
     return (
         <>

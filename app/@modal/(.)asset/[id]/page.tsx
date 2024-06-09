@@ -1,5 +1,5 @@
 import Modal from '@/components/modal/modal';
-import Asset from '@/partials/assets/asset';
+import AssetDetails from '@/partials/assets/asset-details';
 
 declare type AssetProps = {
     params: {
@@ -9,7 +9,7 @@ declare type AssetProps = {
 export default function AssetModal({ params: { id } }: AssetProps) {
     return (
         <Modal>
-            <Asset id={id} />
+            <AssetDetails id={id} />
         </Modal>
     );
 }

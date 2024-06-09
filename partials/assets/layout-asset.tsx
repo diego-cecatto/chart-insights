@@ -31,26 +31,6 @@ export default async function LayoutAsset({ asset }: { asset: Asset }) {
                 </div>
             </div>
             <div className="h-72 bg-gray-100 rounded mb-6"></div>
-            <div className="mb-4">
-                <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-gray-100 p-4 rounded ">
-                        <p className="font-semibold">Question 1</p>
-                        <p>Short description of the item goes nicely here.</p>
-                    </div>
-                    <div>
-                        <p className="font-semibold">Question 2</p>
-                        <p>Short description of the item goes nicely here.</p>
-                    </div>
-                    <div>
-                        <p className="font-semibold">Question 3</p>
-                        <p>Short description of the item goes nicely here.</p>
-                    </div>
-                    <div>
-                        <p className="font-semibold">Question 4</p>
-                        <p>Short description of the item goes nicely here.</p>
-                    </div>
-                </div>
-            </div>
         </AssetBase>
     );
 }

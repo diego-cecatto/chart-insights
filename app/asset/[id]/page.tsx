@@ -1,4 +1,4 @@
-import Asset from '@/partials/assets/asset';
+import Asset from '@/partials/assets/asset-details';
 import Link from 'next/link';
 
 declare type AssetProps = {

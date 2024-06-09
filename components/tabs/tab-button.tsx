@@ -2,8 +2,16 @@
 import Link from 'next/link';
 import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 
-declare type TabButtonProps = { title: string; isActive: boolean };
-export default function TabButton({ title, isActive }: TabButtonProps) {
+declare type TabButtonProps = {
+    title: string;
+    isActive: boolean;
+    onClick?: () => void;
+};
+export default function TabButton({
+    title,
+    isActive,
+    onClick,
+}: TabButtonProps) {
     const searchParams = useSearchParams();
     const router = useRouter();
     const pathname = usePathname();
@@ -12,6 +20,10 @@ export default function TabButton({ title, isActive }: TabButtonProps) {
         <Link
             onClick={(e) => {
                 e.preventDefault();
+                if (onClick) {
+                    onClick();
+                    return;
+                }
                 const params = new URLSearchParams(
                     Array.from(searchParams.entries())
                 );

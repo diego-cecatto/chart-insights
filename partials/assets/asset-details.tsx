@@ -4,7 +4,7 @@ import StoryboardAsset from './storyboard-asset';
 import KPIAsset from './kpi-asset';
 import LayoutAsset from './layout-asset';
 
-export default async function Asset({ id }: { id: string }) {
+export default async function AssetDetails({ id }: { id: string }) {
     const asset = await getById(id);
     if (asset.type === 'Featured') {
         return <KPIAsset asset={asset} />;

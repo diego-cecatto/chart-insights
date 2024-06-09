@@ -1,27 +1,15 @@
 import AssetItem from '@/components/assets/asset-item';
 import { getByType, Asset } from '@/database/assets/assets-database';
+import ChartIcon from '../icons/chart';
 
 declare type AssetListProps = {
     type: string;
     search: string;
-    // description: string;
-    // trending?: boolean;
 };
-export default async function AssetList({
-    type,
-    // description,
-    search,
-}: // trending = false,
-AssetListProps) {
+export default async function AssetList({ type, search }: AssetListProps) {
     let assets: Asset[] = [];
     let treending: Asset[] = [];
     try {
-        // const response = await fetch('http://localhost:3000/api/search', {
-        //     method: 'POST',
-        //     body: JSON.stringify({ query: search, type: title }),
-        // });
-
-        // assets = await response.json();
         const res = await getByType(type, search);
         assets = res.assets;
         treending = res.treending;

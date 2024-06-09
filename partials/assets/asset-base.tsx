@@ -31,13 +31,13 @@ export default async function AssetDetails({
                         evangelize the new line to local markets.
                     </p>
                     <div className="mt-2">
-                        <span className="bg-slate-100	font-medium text-gray-700 text-sm rounded px-2 py-1 mr-1">
+                        <span className="bg-slate-100 font-medium text-gray-700 text-sm rounded px-2 py-1 mr-1">
                             #comms
                         </span>
-                        <span className="bg-slate-100	font-medium  text-gray-700 text-sm rounded px-2 py-1 mr-1">
+                        <span className="bg-slate-100 font-medium  text-gray-700 text-sm rounded px-2 py-1 mr-1">
                             #coverage
                         </span>
-                        <span className="bg-slate-100	font-medium text-gray-700 text-sm rounded px-2 py-1 mr-1">
+                        <span className="bg-slate-100 font-medium text-gray-700 text-sm rounded px-2 py-1 mr-1">
                             #stakeholders
                         </span>
                     </div>

@@ -1,7 +1,7 @@
-import SectionList from '@/components/assets/asset-list';
+import AssetList from '@/components/assets/asset-list';
 import SearchBar from '@/components/search/search-bar';
-import Tabs from '@/components/tabs/tabs';
-import Tab from '@/components/tabs/tab';
+import Tabs from '@/components/tabs/server/tabs-server';
+import Tab from '@/components/tabs/server/tab-server';
 
 export default function Home({
     searchParams,
@@ -26,16 +26,16 @@ export default function Home({
                 <SearchBar />
                 <Tabs active={activeTab}>
                     <Tab title="Featured">
-                        <SectionList type="Featured" search={query} />
+                        <AssetList type="Featured" search={query} />
                     </Tab>
                     <Tab title="KPI">
-                        <SectionList type="KPI" search={query} />
+                        <AssetList type="KPI" search={query} />
                     </Tab>
                     <Tab title="Layouts">
-                        <SectionList type="Layouts" search={query} />
+                        <AssetList type="Layouts" search={query} />
                     </Tab>
                     <Tab key="storyboards" title="Storyboards">
-                        <SectionList type="Storyboards" search={query} />
+                        <AssetList type="Storyboards" search={query} />
                     </Tab>
                 </Tabs>
             </main>
