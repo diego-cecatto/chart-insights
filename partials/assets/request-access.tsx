@@ -1,11 +1,23 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 
-const AccessRequestForm = () => {
-    const handleSubmit = (e: any) => {
+const AccessRequestForm = ({ id }: { id: string }) => {
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmit = async (e: any) => {
         e.preventDefault();
         const formData = new FormData(e.target);
         const reason = formData.get('reason');
+        try {
+            await fetch(`/api/request-access/${id}`, {
+                method: 'POST',
+                body: JSON.stringify({ reason }),
+            });
+        } catch (error) {
+            console.error(error);
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -34,6 +46,7 @@ const AccessRequestForm = () => {
                 <button
                     type="submit"
                     className="w-full text-white py-2 px-4 rounded bg-slate-900 hover:bg-slate-800 transition-colors duration-200"
+                    disabled={loading}
                 >
                     Send
                 </button>
